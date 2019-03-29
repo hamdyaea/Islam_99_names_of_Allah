@@ -9,6 +9,12 @@
 This Python 3 software help you to learn to 99 name of Allah.
 
 Information there : https://simple.wikipedia.org/wiki/Names_of_God_in_Islam
+
+## Download the Windows .exe version :
+
+You can run it with Python 3 and the right libraries or for Windows you can use the .exe software that I created there :
+
+[![Download Islam 99 names of Allah](https://img.shields.io/sourceforge/dm/islam-99-names-of-allah.svg)](https://sourceforge.net/projects/islam-99-names-of-allah/files/latest/download)
      
 ## What you need to make it work :  
 
