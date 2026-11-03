@@ -1,50 +1,34 @@
-![Awesome](awesome.svg) ![Python](python.png)  
+# The 99 Names of Allah — Python Desktop Viewer
 
-# The 99 Names of Allah
+Developer: Hamdy Abou El Anein
+Contact: hamdy.aea@protonmail.com
+License: GNU GPL v3 (see LICENSE).
 
-![Screenshot](screenshot.png)
+An educational slideshow of the historical 100 images in `Pictures/`
+(99 numbered slides and one closing slide). The application has been
+modernized from recursive EasyGUI dialogs to a single **Tkinter** window.
 
-## What's this software ?  
-
-This Python 3 software help you to learn to 99 name of Allah.
-
-Information there : https://simple.wikipedia.org/wiki/Names_of_God_in_Islam
-
-## Download the Windows .exe version :
-
-You can run it with Python 3 and the right libraries or for Windows you can use the .exe software that I created there :
-
-[![Download Islam 99 names of Allah](https://img.shields.io/sourceforge/dm/islam-99-names-of-allah.svg)](https://sourceforge.net/projects/islam-99-names-of-allah/files/latest/download)
-[![Download Islam 99 names of Allah](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/islam-99-names-of-allah/files/latest/download)     
-
-## What you need to make it work :  
-
-
-The last version of Python 3.
-
-you also need to have the easygui library for python 3:
-
-At least the version 0.98
+## Install and run
 
 ```sh
-sudo python3 -m pip install --upgrade easygui 
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
+python names_of_Allah.py
 ```
 
-## How to launch this software :  
+Tkinter must be installed through your Linux distribution. Use Previous,
+Next and Beginning buttons or keyboard arrow keys and Home/End.
+
+## Tests
 
 ```sh
-python3 names_of_Allah.py
-```  
+python3 -m unittest discover -s tests -v
+```
 
-## Requirements :
+Tests check the full image set, invalid indices and portable paths.
+The GUI was also opened and navigated on Manjaro during modernization.
+The original code is preserved in the Git branch `old`.
 
-If you miss a module, install it with the command pip install module-name. For example if you miss PIL you can install it with : sudo pip3 install pillow.
-
-
-## Developer - Author
-
-Hamdy Abou El Anein
-
-## Homepage
-
-http://www.daylightlinux.ch 
+The original images are retained unchanged. Their underlying artwork
+and any third-party rights are not reassigned by this modernization.
